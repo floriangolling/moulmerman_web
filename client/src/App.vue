@@ -1,51 +1,47 @@
 <template>
   <div id="app" @mousemove="changeMouse" @click="changeMouse">
     <img id="mouseImage" width="30px" height=30px src="./assets/Bestiole.png"  style="display:none" />
-    <b-navbar>
+    <b-navbar class="navbarArcade">
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img
-                    src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-                    alt="Lightweight UI components for Vue.js based on Bulma"
-                >
+              <span class="video-game-button"> M </span>
+              <span class="video-game-button"> O </span>
+              <span class="video-game-button"> U </span>
+              <span class="video-game-button"> L </span>
+              <span class="video-game-button"> M </span>
+              <span class="video-game-button"> E </span>
+              <span class="video-game-button"> R </span>
+              <span class="video-game-button"> M </span>
+              <span class="video-game-button"> A </span>
+              <span class="video-game-button"> N </span>
             </b-navbar-item>
         </template>
         <template #start>
-            <b-navbar-item href="#">
-                Home
-            </b-navbar-item>
-            <b-navbar-item href="#">
-                Documentation
-            </b-navbar-item>
-            <b-navbar-dropdown label="Info">
-                <b-navbar-item href="#">
-                    About
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
         </template>
 
         <template #end>
             <b-navbar-item tag="div">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
+                <div class="">
+                    <span class="start-btn">
+                      DOWNLOAD
+                    </span>
+                    <span class="start-btn" style="margin-left:1rem" @click="testFct">
+                      GAMES
+                    </span>
                 </div>
             </b-navbar-item>
         </template>
     </b-navbar>
     <div class="hero is-fullheight-with-navbar is-danger has-background">
       <img src="./assets/Bomberman_background.png" class="hero-background">
-      <div class="hero-body">
-        <div class="section">
-          <div class="colums">
+      <div class="hero-body" style="align-items: baseline">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
 
+            </div>
+            <div class="column">
+            </div>
           </div>
         </div>
       </div>
@@ -75,8 +71,7 @@ export default Vue.extend({
     changeMouse(e) {
       if (!this.mouseComponent)
         return;
-      this.mouseComponent.style = `z-index:99999;position:absolute;left: ${e.clientX - 10}px;top:${e.clientY - 10}px`
-      console.log(e);
+      this.mouseComponent.style = `z-index:99999;position:absolute;left: ${e.clientX - 10}px;top:${e.clientY - 10}px;    pointer-events: none;`
     },
     async getAllGames()  {
       try {
@@ -88,11 +83,13 @@ export default Vue.extend({
       } catch (error) {
         console.log(error);
       }
+    },
+    testFct() {
+      console.log('oui')
     }
   },
   async mounted() {
     this.mouseComponent = document.getElementById('mouseImage')
-    console.log('test')
     setTimeout( async () => {
       this.getAllGames();
     }, 50000)
@@ -101,6 +98,55 @@ export default Vue.extend({
 </script>
 
 <style>
+
+@font-face {
+  font-family: 'Press Start 2p';
+  src: url('./assets/PressStart2P-Regular.ttf') format("truetype")
+}
+
+body * {
+  font-family: 'Press Start 2p';
+  cursor: none;
+}
+
+.box {
+  z-index:  9 !important;
+}
+
+.gradient-border {
+  z-index: 9999px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: 3px;
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;;
+  height: -3px;
+  width: -3px;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: 6px;
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 
 .hero.has-background {
   position: relative;
@@ -115,9 +161,59 @@ export default Vue.extend({
   .hero-background.is-transparent {
     opacity: 0.3; }
 
+    .start-btn{
+      font-size:1rem;
+    text-align: center;
+	display: inline-block;
+    font-weight: bold;
+    padding: 10px 0 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
 
-    #navbar-container {
-      background-color: black;
-    }
+}
+
+.video-game-button {
+	text-shadow: 1px 1px pink, -1px -1px maroon;
+  font-size: 1.2rem;
+	line-height: 1.5em;
+	text-align: center;
+	display: inline-block;
+	width: 1.5em;
+	-webkit-border-radius: .75em;
+	-moz-border-radius: .75em;
+	-o-border-radius: .75em;
+		border-radius: .75em;
+	background-color: red;
+	-webkit-box-shadow:  0 .2em maroon;
+	-moz-box-shadow:  0 .2em maroon;
+	-o-box-shadow:  0 .2em maroon;
+	box-shadow:  0 .2em maroon;
+	color: red;
+	margin: 5px;
+	background-color: red;
+	background-image: -o-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -moz-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: -webkit-linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+	background-image: linear-gradient(left top, pink 3%, red 22%, maroon 99%);
+  padding: 0.2rem;
+}
+
+.navbarArcade {
+  background: url('./assets/test.png') !important;
+  background-origin: padding-box;
+  border: 4px rgb(0, 0, 0) dashed !important;
+}
+
+.video-game-button:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
 
 </style>
