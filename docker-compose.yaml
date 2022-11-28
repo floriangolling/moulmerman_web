@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: 
+        - './server'
+    port: 8080:8080
+    networks:
+      - server_back    
+  front:
+    build:
+      context:
+        - './client'
+    port: 3000:3000
+    networks:
+      - server_back
+
+networks:
+  server_back
