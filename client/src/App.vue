@@ -1,7 +1,7 @@
 <template>
   <div id="app" @mousemove="changeMouse" @click="changeMouse">
     <img id="mouseImage" width="30px" height=30px src="./assets/Bestiole.png"  style="display:none" />
-    <b-navbar class="navbarArcade">
+    <b-navbar class="navbarArcade is-fixed-top">
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
               <span class="video-game-button"> M </span>
@@ -32,13 +32,42 @@
             </b-navbar-item>
         </template>
     </b-navbar>
-    <div class="hero is-fullheight-with-navbar is-danger has-background">
+    <div class="hero is-fullheight is-danger has-background">
       <img src="./assets/Bomberman_background.png" class="hero-background">
       <div class="hero-body" style="align-items: baseline">
         <div class="container">
           <div class="columns">
-            <div class="column">
-
+            <div class="column mt-5">
+              <div class="box outer-box mt-6" style="max-height: 80vh;overflow: auto;background-color: black;box-shadow: 10px 0px 7px 15px black;">
+                <div class="box inner-box" style="color: black">
+                  <h1 class="has-text-centered"> GAME 1 </h1>
+                  <h2 class="mt-2"> Player 1</h2>
+                  <h2 class="mt-2"> Player 2</h2>
+                  <h2 class="mt-2"> Player 3</h2>
+                  <h2 class="mt-2"> Player 4</h2>
+                </div>
+                <div class="box inner-box" style="color: black">
+                  <h1 class="has-text-centered"> GAME 2 </h1>
+                  <h2 class="mt-2"> Player 1</h2>
+                  <h2 class="mt-2"> Player 2</h2>
+                  <h2 class="mt-2"> Player 3</h2>
+                  <h2 class="mt-2"> Player 4</h2>
+                </div>
+                <div class="box inner-box" style="color: black">
+                  <h1 class="has-text-centered"> GAME 3 </h1>
+                  <h2 class="mt-2"> Player 1</h2>
+                  <h2 class="mt-2"> Player 2</h2>
+                  <h2 class="mt-2"> Player 3</h2>
+                  <h2 class="mt-2"> Player 4</h2>
+                </div>
+                <div class="box inner-box" style="color: black">
+                  <h1 class="has-text-centered"> GAME 4 </h1>
+                  <h2 class="mt-2"> Player 1</h2>
+                  <h2 class="mt-2"> Player 2</h2>
+                  <h2 class="mt-2"> Player 3</h2>
+                  <h2 class="mt-2"> Player 4</h2>
+                </div>                                
+              </div>
             </div>
             <div class="column">
             </div>
@@ -111,6 +140,32 @@ body * {
 
 .box {
   z-index:  9 !important;
+}
+
+.inner-box {
+  border-radius: 1.5rem !important;
+  background-color: lightgray !important;
+}
+
+.outer-box {
+  border: 1px solid black;
+  border-radius: 1rem 1rem 1rem 1rem!important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cb436a;
+  border-radius: 10px;
 }
 
 .gradient-border {
@@ -206,8 +261,8 @@ body * {
 
 .navbarArcade {
   background: url('./assets/test.png') !important;
-  background-origin: padding-box;
-  border: 4px rgb(0, 0, 0) dashed !important;
+  background-origin: padding-box !important;
+  box-shadow: 0px 5px 5px 0 black;
 }
 
 .video-game-button:active, .start-btn:active {
