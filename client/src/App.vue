@@ -40,33 +40,157 @@
             <div class="column mt-5">
               <div class="box outer-box mt-6" style="max-height: 80vh;overflow: auto;background-color: black;box-shadow: 10px 0px 7px 15px black;">
                 <div class="box inner-box" style="color: black">
-                  <h1 class="has-text-centered"> GAME 1 </h1>
-                  <h2 class="mt-2"> Player 1</h2>
-                  <h2 class="mt-2"> Player 2</h2>
-                  <h2 class="mt-2"> Player 3</h2>
-                  <h2 class="mt-2"> Player 4</h2>
+                  <div style="border: 2px solid black;border-radius: 15px;">
+                    <h1 class="has-text-centered mt-3"> GAME 4 </h1>
+                    <h1 class="has-text-centered mb-3" style="font-size:0.6rem"> DURATION 4:38s </h1>
+                  </div>
+                  <div class="columns mt-1">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Guillaume </h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 11</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Migo </h2>
+                      <div class="smaller-text">
+                        <p > RANK: 2</p>
+                        <p> BLOCK DESTROYED: 6</p>
+                      </div>                  
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Guillaume2.0 </h2>
+                      <div class="smaller-text">
+                        <p> RANK: 4</p>
+                        <p> BLOCK DESTROYED: 5</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Flo</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 3</p>
+                        <p> BLOCK DESTROYED: 9</p>
+                      </div>                  
+                    </div>
+                  </div>            
                 </div>
                 <div class="box inner-box" style="color: black">
-                  <h1 class="has-text-centered"> GAME 2 </h1>
-                  <h2 class="mt-2"> Player 1</h2>
-                  <h2 class="mt-2"> Player 2</h2>
-                  <h2 class="mt-2"> Player 3</h2>
-                  <h2 class="mt-2"> Player 4</h2>
+                  <div style="border: 2px solid black;border-radius: 15px;">
+                    <h1 class="has-text-centered mt-3"> GAME 3 </h1>
+                    <h1 class="has-text-centered mb-3" style="font-size:0.6rem"> DURATION 7:26s </h1>
+                  </div>
+                  <div class="columns mt-1">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 25</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 3</p>
+                        <p> BLOCK DESTROYED: 14</p>
+                      </div>                  
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 2</p>
+                        <p> BLOCK DESTROYED: 13</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 4</p>
+                        <p> BLOCK DESTROYED: 0</p>
+                      </div>                  
+                    </div>
+                  </div>            
                 </div>
                 <div class="box inner-box" style="color: black">
-                  <h1 class="has-text-centered"> GAME 3 </h1>
-                  <h2 class="mt-2"> Player 1</h2>
-                  <h2 class="mt-2"> Player 2</h2>
-                  <h2 class="mt-2"> Player 3</h2>
-                  <h2 class="mt-2"> Player 4</h2>
+                  <div style="border: 2px solid black;border-radius: 15px;">
+                    <h1 class="has-text-centered mt-3"> GAME 2 </h1>
+                    <h1 class="has-text-centered mb-3" style="font-size:0.6rem"> DURATION 8:19s </h1>
+                  </div>
+                  <div class="columns mt-1">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>                  
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>                  
+                    </div>
+                  </div>            
                 </div>
                 <div class="box inner-box" style="color: black">
-                  <h1 class="has-text-centered"> GAME 4 </h1>
-                  <h2 class="mt-2"> Player 1</h2>
-                  <h2 class="mt-2"> Player 2</h2>
-                  <h2 class="mt-2"> Player 3</h2>
-                  <h2 class="mt-2"> Player 4</h2>
-                </div>                                
+                  <div style="border: 2px solid black;border-radius: 15px;">
+                    <h1 class="has-text-centered mt-3"> GAME 1 </h1>
+                    <h1 class="has-text-centered mb-3" style="font-size:0.6rem"> DURATION 4:38s </h1>
+                  </div>
+                  <div class="columns mt-1">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>                  
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p> RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2 class="mt-2 has-text-centered mb-3" style="text-decoration: underline;"> Player 1</h2>
+                      <div class="smaller-text">
+                        <p > RANK: 1</p>
+                        <p> BLOCK DESTROYED: 38</p>
+                      </div>                  
+                    </div>
+                  </div>            
+                </div>                              
               </div>
             </div>
             <div class="column">
@@ -160,6 +284,10 @@ body * {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 2rem;
+}
+
+.smaller-text {
+  font-size: 0.8rem;
 }
 
 /* Handle */
